@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="This is social network html5 template available in themeforest......" />
+		<meta name="keywords" content="Social Network, Social Media, Make Friends, Newsfeed, Profile Page" />
+		<meta name="robots" content="index, follow" />
+		<title>Edit Profile | Account Settings</title>
+
+    <!-- Stylesheets
+    ================================================= -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/ionicons.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/custom.css" />
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
+	</head>
+  <body>
+
+    <!-- Header
+    ================================================= -->
+		<header id="header">
+        <nav class="navbar navbar-default navbar-fixed-top menu">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index-register.html">
+                            <!-- <img src="images/logo.png" alt="logo" />-->
+                            <span style="color:#fff;font-size:30px">HAWK EYE</span>
+                        </a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right main-menu" style="padding-right:30px">
+                            <li style="margin-right:10px">
+                                <a href="#"><i class="fa fa-bell" style="color:#fff;font-size:23px"></i></a>
+                            </li>
+                            <li style="margin-right:10px">
+                                <a href="#"><i class="fa fa-comment" style="color:#fff;font-size:23px"></i></a>
+                            </li>
+                            <li style="margin-right:10px">
+                                <a href="#"><i class="fa fa-cog" style="color:#fff;font-size:23px"></i></a>
+                            </li>
+                        </ul>
+                        <div align="center">
+                            <form class="navbar-form navbar-center hidden-sm">
+                                <div class="form-group">
+                                    <i class="icon ion-android-search"></i>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+    </header>
+    <!--Header End-->
+
+    <div class="container">
+
+      <!-- Timeline
+      ================================================= -->
+      <div class="timeline">
+        <div class="timeline-cover">
+
+          <!--Timeline Menu for Large Screens-->
+          <div class="timeline-nav-bar hidden-sm hidden-xs">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="profile-info">
+                  <img src=" " alt="" class="img-responsive profile-photo" id="mypic"/>
+                  <h3 id=rname></h3>
+                  <p class="text-muted"></p>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <ul class="list-inline profile-menu">
+                  <li><a href="#" class="active">About</a></li>
+                  <!-- <li><a href="timeline.html">Timeline</a></li>
+                  <li><a href="timeline-album.html">Album</a></li>
+                  <li><a href="timeline-friends.html">Friends</a></li> -->
+                </ul>
+                <!-- <ul class="follow-me list-inline">
+                  <li>1,299 people following her</li>
+                  <li><button class="btn-primary">Add Friend</button></li>
+                </ul> -->
+              </div>
+            </div>
+          </div><!--Timeline Menu for Large Screens End-->
+
+          <!--Timeline Menu for Small Screens-->
+          <div class="navbar-mobile hidden-lg hidden-md">
+            <div class="profile-info">
+              <img src="http://placehold.it/300x300" alt="" class="img-responsive profile-photo" />
+              <h4>Sarah Cruiz</h4>
+              <p class="text-muted">Creative Director</p>
+            </div>
+            <div class="mobile-menu">
+              <ul class="list-inline">
+                <li><a href="timline.html">Timeline</a></li>
+                <li><a href="timeline-about.html" class="active">About</a></li>
+                <li><a href="timeline-album.html">Album</a></li>
+                <li><a href="timeline-friends.html">Friends</a></li>
+              </ul>
+              <button class="btn-primary">Add Friend</button>
+            </div>
+          </div><!--Timeline Menu for Small Screens End-->
+
+        </div>
+				<div class="container">
+        <!-- <div id="page-contents"> -->
+					<div class="post-content box" id="news_feed" style="height:300px;">
+							<div class="post-container" style="padding-bottom:0px;">
+								<h3  style="text-transfrom:capitalize;">Basic Information</h3>
+									<!-- <img src="http://www.isc.hbs.edu/Style%20Library/hbs/images/home/icons/large-circles/business-person-icon.png" alt="user" class="profile-photo-md pull-left"> -->
+									<div class="post-detail">
+											<div class="user-info">
+
+													<!-- <p class="text-muted"> Published a photo about 3 mins ago</p> -->
+											</div>
+									</div>
+									<div class="line-divider"></div>
+									<div class="post-text" style="height:250px;">
+										<!-- <h5><a href="#" class="profile-link" id="j_title"><?php echo $row['j_title']?> with <?php echo $row['j_exp'];?> Experience</a> </h5> -->
+
+										<div class="container" style="height:180px;background:#f8f8f8;width:100%;line-height:20px;padding-top:5px;border-radius:8px;">
+											<div class="row">
+												<h5 class="col-sm-1" style="text-align:justify;margin-bottom:0px;color:#000">Name &nbsp;&nbsp;:</h5> <div class="col-sm-11"><h5 style="text-align:justify;margin-bottom:0px;color:#000"><span>Swaroopa</span></h5></div>
+											</div>
+											<div class="row">
+												<h5 class="col-sm-1" style="text-align:justify;margin-bottom:0px;color:#000">Email &nbsp;&nbsp; :</h5> <div class="col-sm-11"><h5 style="text-align:justify;margin-bottom:0px;color:#000"><span>swaroopa@123</span></h5></div>
+											</div>
+											<div class="row">
+												<h5 class="col-sm-1" style="text-align:justify;margin-bottom:0px;color:#000">Mobile :</h5> <div class="col-sm-11"><h5 style="text-align:justify;margin-bottom:0px;color:#000"><span>9848023436</span></h5></div>
+											</div>
+											<div class="row">
+												<h5 class="col-sm-1" style="text-align:justify;margin-bottom:0px;color:#000">DOB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h5> <div class="col-sm-11"><h5 style="text-align:justify;margin-bottom:0px;color:#000"><span>28/04/1993</span></h5></div>
+											</div>
+											<div class="row">
+												<h5 class="col-sm-1" style="text-align:justify;margin-bottom:0px;color:#000">Gender :</h5> <div class="col-sm-11"><h5 style="text-align:justify;margin-bottom:0px;color:#000"><span>FEMALE</span></h5></div>
+											</div>
+											<div class="row">
+												<h5 class="col-sm-1" style="text-align:justify;margin-bottom:0px;color:#000">City &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</h5> <div class="col-sm-11"><h5 style="text-align:justify;margin-bottom:0px;color:#000"><span>Vishakapatnam</span></h5></div>
+											</div>
+
+
+										</div>
+
+									</div>
+
+							</div>
+					</div>
+
+					<div class="post-content box" id="news_feed" style="height:300px;">
+							<div class="post-container" style="padding-bottom:0px;">
+								<h3  style="text-transfrom:capitalize;">Education and work</h3>
+									<!-- <img src="http://www.isc.hbs.edu/Style%20Library/hbs/images/home/icons/large-circles/business-person-icon.png" alt="user" class="profile-photo-md pull-left"> -->
+									<div class="post-detail">
+											<div class="user-info">
+
+													<!-- <p class="text-muted"> Published a photo about 3 mins ago</p> -->
+											</div>
+									</div>
+									<div class="line-divider"></div>
+									<div class="post-text" style="height:250px;">
+										<!-- <h5><a href="#" class="profile-link" id="j_title"><?php echo $row['j_title']?> with <?php echo $row['j_exp'];?> Experience</a> </h5> -->
+
+										<div class="container" style="height:180px;background:#f8f8f8;width:100%;line-height:20px;padding-top:5px;border-radius:8px;">
+
+											<div class="edit-profile-container">
+			                  <div class="block-title">
+			                    <h4 class="grey"><i class="icon ion-ios-book-outline"></i>My education</h4>
+			                  </div>
+			                  <div id="education_det">
+													<table class="table">
+    												<thead>
+													      <tr>
+													        <th>SNO</th>
+													        <th>Board</th>
+													        <th>Qualification</th>
+													        <th>Institute</th>
+													        <th>Marks</th>
+													        <th>Year of passing</th>
+													      </tr>
+													    </thead>
+													    <tbody>
+													      <tr>
+													        <td>1</td>
+													        <td>abc</td>
+													        <td>xyz</td>
+													        <td>abc</td>
+													        <td>123</td>
+													        <td>2010</td>
+													      </tr>
+													      <tr>
+													        <td>2</td>
+													        <td>abc</td>
+													        <td>xyz</td>
+													        <td>abc</td>
+													        <td>456</td>
+													        <td>2014</td>
+													      </tr>
+													      <tr>
+													        <td>3</td>
+																	<td>abc</td>
+													        <td>xyz</td>
+													        <td>abc</td>
+													        <td>789</td>
+													        <td>2017</td>
+													      </tr>
+													    </tbody>
+													  </table>
+			                  </div>
+											</div>
+
+										</div>
+
+									</div>
+
+							</div>
+					</div>
+
+					<div class="post-content box" id="news_feed" style="height:300px;">
+							<div class="post-container" style="padding-bottom:0px;">
+								<h3  style="text-transfrom:capitalize;">Project Details</h3>
+									<!-- <img src="http://www.isc.hbs.edu/Style%20Library/hbs/images/home/icons/large-circles/business-person-icon.png" alt="user" class="profile-photo-md pull-left"> -->
+									<div class="post-detail">
+											<div class="user-info">
+
+													<!-- <p class="text-muted"> Published a photo about 3 mins ago</p> -->
+											</div>
+									</div>
+									<div class="line-divider"></div>
+									<div class="post-text" style="height:250px;">
+										<!-- <h5><a href="#" class="profile-link" id="j_title"><?php echo $row['j_title']?> with <?php echo $row['j_exp'];?> Experience</a> </h5> -->
+
+										<div class="container" style="height:180px;background:#f8f8f8;width:100%;line-height:20px;padding-top:5px;border-radius:8px;">
+
+											<div class="edit-profile-container">
+												<div class="block-title">
+			                    <h4 class="grey"><i class="icon ion-ios-briefcase-outline"></i>Work Experiences</h4>
+			                  </div>
+												<div id="work_exp">
+													<table class="table">
+														<thead>
+																<tr>
+																	<th>SNO</th>
+																	<th>Project Name</th>
+																	<th>Project Description</th>
+																	<th>Workshop Name</th>
+																	<th>Workshop Description</th>
+																	<th>Presentation</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td>abc</td>
+																	<td>xyz</td>
+																	<td>abc</td>
+																	<td>123</td>
+																	<td>2010</td>
+																</tr>
+																<tr>
+																	<td>2</td>
+																	<td>abc</td>
+																	<td>xyz</td>
+																	<td>abc</td>
+																	<td>456</td>
+																	<td>2014</td>
+																</tr>
+																<tr>
+																	<td>3</td>
+																	<td>abc</td>
+																	<td>xyz</td>
+																	<td>abc</td>
+																	<td>789</td>
+																	<td>2017</td>
+																</tr>
+															</tbody>
+														</table>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+
+							</div>
+					</div>
+
+					<div class="post-content box" id="news_feed" style="height:300px;">
+							<div class="post-container" style="padding-bottom:0px;">
+								<h3  style="text-transfrom:capitalize;">Project Details</h3>
+									<!-- <img src="http://www.isc.hbs.edu/Style%20Library/hbs/images/home/icons/large-circles/business-person-icon.png" alt="user" class="profile-photo-md pull-left"> -->
+									<div class="post-detail">
+											<div class="user-info">
+
+													<!-- <p class="text-muted"> Published a photo about 3 mins ago</p> -->
+											</div>
+									</div>
+									<div class="line-divider"></div>
+									<div class="post-text" style="height:250px;">
+										<!-- <h5><a href="#" class="profile-link" id="j_title"><?php echo $row['j_title']?> with <?php echo $row['j_exp'];?> Experience</a> </h5> -->
+
+										<div class="container" style="height:180px;background:#f8f8f8;width:100%;line-height:20px;padding-top:5px;border-radius:8px;">
+
+											<div class="edit-profile-container">
+												<div class="block-title">
+			                    <h4 class="grey"><i class="icon ion-ios-briefcase-outline"></i>Fresher Project Details</h4>
+			                  </div>
+												<div id="work_exp">
+													<table class="table">
+														<thead>
+																<tr>
+																	<th>SNO</th>
+																	<th>Project Name</th>
+																	<th>Project Description</th>
+																	<th>Workshop Name</th>
+																	<th>Workshop Description</th>
+																	<th>Presentation</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>1</td>
+																	<td>abc</td>
+																	<td>xyz</td>
+																	<td>abc</td>
+																	<td>123</td>
+																	<td>2010</td>
+																</tr>
+																<tr>
+																	<td>2</td>
+																	<td>abc</td>
+																	<td>xyz</td>
+																	<td>abc</td>
+																	<td>456</td>
+																	<td>2014</td>
+																</tr>
+																<tr>
+																	<td>3</td>
+																	<td>abc</td>
+																	<td>xyz</td>
+																	<td>abc</td>
+																	<td>789</td>
+																	<td>2017</td>
+																</tr>
+															</tbody>
+														</table>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+
+							</div>
+					</div>
+        <!-- </div> -->
+				</div>
+      </div>
+    </div>
+
+
+    <!-- Footer
+    ================================================= -->
+
+
+    <!--preloader-->
+    <div id="spinner-wrapper">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Scripts
+    ================================================= -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky-kit.min.js"></script>
+    <script src="js/jquery.scrollbar.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/r_recinfo.js"></script>
+
+
+  </body>
+</html>

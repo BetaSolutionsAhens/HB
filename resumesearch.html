@@ -1,0 +1,249 @@
+<html>
+    <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HawkEye</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/magnific-popup.css" />
+        <link rel="stylesheet" href="css/ionicons.min.css" />
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" href="css/custom.css" />
+        <link href="css/emoji.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style_2.css">
+        <link href="css/jquery.tagit.css" rel="stylesheet" type="text/css">
+        <link href="css/tagit.ui-zendesk.css" rel="stylesheet" type="text/css">
+        <!--Google Font-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
+        <!--Favicon-->
+        <style>
+          span{
+          color: black;
+          }
+          a.cell{
+          padding-left: 8px;
+          padding-right: 8px;
+          padding-top: 16px;
+          padding-bottom: 8px;
+          font-size: 100%;
+          background: #0fbcf5b3;
+          margin-left: -66px;
+          margin-right: -75px;
+          }
+
+         .glyphicon-search{
+           font-size: 150%;
+           text-align: center;
+           margin-top: 10px;
+         }
+       </style>
+    </head>
+    <body>
+      <!-- Header
+      ================================================= -->
+      <header id="header">
+          <nav class="navbar navbar-default navbar-fixed-top menu">
+              <div class="container">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header" style="width:220px">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="index-register.html" style="padding-top:6px;">
+                          <img src="images/demo.png" alt="logo" width="40" />
+                      </a>
+                      <h3 style="margin-top:13px;color:#fff;font-family:lato">HIRE BLOCKS</h3>
+                  </div>
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right main-menu" style="padding-right:30px">
+                          <li style="margin-right:10px">
+                              <a href="#"><i class="fa fa-bell" style="color:#fff;font-size:23px"></i></a>
+                          </li>
+                          <li style="margin-right:10px">
+                              <a href="#"><i class="fa fa-comment" style="color:#fff;font-size:23px"></i></a>
+                          </li>
+                          <li class="dropdown">
+                              <a class="dropdown-toggle" data-toggle="dropdown" href="edit-profile-password.html" style="color:#fff;font-size:23px"><i class="fa fa-cog"></i><span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                  <li>
+                                      <a href="candidate-profile-settings.html">Account Settings</a>
+                                  </li>
+                                  <li>
+                                      <a href="edit-profile-password.html">Change Password</a>
+                                  </li>
+                                  <li>
+                                      <a href="php/log_out.php" id="lg">Log Out</a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                      <div align="center">
+                          <form class="navbar-form navbar-center hidden-sm">
+                              <div class="form-group">
+                                  <i class="icon ion-android-search" style="font-size:20px"></i>
+                                  <input type="text" class="form-control">
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+                  <!-- /.navbar-collapse -->
+              </div>
+              <!-- /.container -->
+          </nav>
+      </header>
+    <!--Header End-->
+    <div id="page-contents">
+      <div class="container">
+        <div class="row">
+          <!-- Newsfeed Common Side Bar Left
+          ================================================= -->
+          <div class="col-md-3 static">
+              <div class="profile-card">
+                  <img src="http://www.isc.hbs.edu/Style%20Library/hbs/images/home/icons/large-circles/business-person-icon.png" alt="user" class="profile-photo" />
+                  <h5 style="text-transform:capitalize"id=""><a href="timeline.html" class="text-white" id="r_name"></a></h5>
+                  <p hidden id="rid"></p>
+                  <a href="#" class="text-white"> 1,299 Views</a>
+              </div>
+              <!--profile card ends-->
+              <!--news-feed links ends-->
+              <div id="chat-block" class="chat-block box_noh">
+                  <ul class="nav-news-feed" style="text-align:left;">
+                      <li>
+                          <div style="border-bottom:1px solid #c0c0c0">
+                              <a href="rec_profile.html" style="color:#149AC9"><i class="fa fa-user-circle sb_i" ></i>Profile</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div style="border-bottom:1px solid #c0c0c0">
+                              <a href="r_postedJobs.html" style="color:#149AC9"><i class="fa fa-newspaper-o sb_i" ></i>Jobfeed</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div style="border-bottom:1px solid #c0c0c0">
+                              <a href="resumesearch.html" style="color:#149AC9"><i class="fa fa-vcard sb_i" ></i>Resume Search</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div style="border-bottom:1px solid #c0c0c0">
+                              <a href="r_jobpost.html" style="color:#149AC9"><i class="fa fa-user sb_i" ></i>Post a Job</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div style="border-bottom:1px solid #c0c0c0">
+                              <a href="relevant.html" style="color:#149AC9"><i class="fa fa-bullseye sb_i" ></i>Relevant</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div style="border-bottom:1px solid #c0c0c0">
+                              <a href="#" id="msglink" style="color:#149AC9"><i class="fa fa-comments sb_i" ></i>Messages</a>
+                          </div>
+                      </li>
+                      <li>
+                          <div style="border-bottom:1px solid #c0c0c0">
+                              <a href="rec_det_follow.html" style="color:#149AC9"><i class="fa fa-indent sb_i" ></i>JobPosts</a>
+                          </div>
+                      </li>
+                  </ul>
+                  <div style="height:40%;margin-top:60px;background:#fff;padding-top:7px;padding-left:20px;border-radius:4px" align="left" class="box_noh">
+                    <!-- <div align="left"> -->
+                      <span style="font-size:15px;text-transform:uppercase;color:#27aae1;">Reports</span><br />
+
+                    <!-- </div> -->
+                    <span style="margin-top:15px;">660 Views</span><br />
+                    <span style="margin-top:15px;">500 Downloads</span>
+
+                  </div>
+                  <div style="height:40%;margin-top:20px;background:#fff;padding-top:7px;padding-left:20px;border-radius:4px" align="left" class="box_noh" >
+                    <!-- <div align="left"> -->
+                      <span style="font-size:15px;text-transform:uppercase;color:#27aae1;">Stats</span><br />
+
+                    <!-- </div> -->
+                    <span style="margin-top:15px;"><i class="fa fa-arrow-up" style="color:green"></i>30%</span> <i class="fa fa-arrow-down" style="color:red"></i>80%</span><br />
+                    <span style="margin-top:15px;color:#ff7f7f">Please update your Profile</span>
+
+                  </div>
+              </div>
+
+              <!--chat block ends-->
+          </div>
+          <div class="col-md-9" style="background:#fff;height:100%;padding-top:10px;">
+            <div class="container"align="center"style="width:100%">
+              <h4>Resume Search</h4>
+
+            </div>
+            <div class="col-md-12"style="height:50px;">
+              <div class="col-md-11 form-group">
+
+                    <input type="text" id="skillSearch"  class="form-control iptag">
+              </div>
+              <div class="col-md-1 form-group">
+                <a href="#" class="cell" id="searchclass">
+                <span class="glyphicon glyphicon-search" ></span>
+              </a>
+              </div>
+            </div>
+
+            <div class="col-md-12" style="text-align:right;padding-right:90px;">
+              <a href="#" id="aTools">Advance Search</a>
+            </div>
+            <div class="row" id="filters">
+              <div class="col-md-4 form-group">
+                <input type="text" class="form-control" id="exp" placeholder="Enter Experience" title="Experience" value="">
+              </div>
+              <div class="col-md-4 form-group">
+                <input type="text" class="form-control" list="location" id="loc" placeholder="Enter Location" title="Location" value="">
+                <datalist class="" id="location">
+
+                </datalist>
+              </div>
+              <div class="col-md-4 form-group">
+                <input type="text" class="form-control" id="ctc" placeholder="Expected Salary" title="Expected Salary" value="">
+
+              </div>
+              <div class="col-md-4 form-group">
+                <!-- <input type="button" class="btn" id="can_filter" value="Submit"> -->
+                <button type="button" id="can_filter" class="btn sub_fl">Submit</button>
+              </div>
+            </div>
+            <div id="applied1">
+
+            </div>
+            <div id="filter_data"></div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div id="spinner-wrapper">
+      <div class="spinner"></div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <!--
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="js/tag-it.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/tagprompt.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.sticky-kit.min.js"></script>
+  <script src="js/jquery.scrollbar.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/job_shortlist.js"></script>
+    <script src="js/c_jobView.js"></script>
+
+  <!-- <script src="js/script.js"></script> -->
+  <script type="text/javascript" src="js/rs.js">
+
+  </script>
+  <script type="text/javascript" src="js/jobPosting.js"></script>
+
+</html>

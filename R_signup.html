@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HawkEye</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style_2.css">
+    <link href="jquery.tagit.css" rel="stylesheet" type="text/css">
+    <link href="tagit.ui-zendesk.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <header id="header-inverse">
+    <nav class="navbar navbar-default navbar-fixed-top menu">
+      <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index-register.html"><img src="images/logo.png" alt="logo" /></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right main-menu">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span><img src="images/down-arrow.png" alt="" /></span></a>
+              <ul class="dropdown-menu newsfeed-home">
+                <!-- <li><a href="index.html">Landing Page 1</a></li> -->
+                <li><a href="index-register.html">Landing Page 2</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Newsfeed <span><img src="images/down-arrow.png" alt="" /></span></a>
+              <ul class="dropdown-menu newsfeed-home">
+                <li><a href="newsfeed.html">Newsfeed</a></li>
+                <li><a href="newsfeed-people-nearby.html">Poeple Nearly</a></li>
+                <li><a href="newsfeed-friends.html">My friends</a></li>
+                <li><a href="newsfeed-messages.html">Chatroom</a></li>
+                <li><a href="newsfeed-images.html">Images</a></li>
+                <li><a href="newsfeed-videos.html">Videos</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Timeline <span><img src="images/down-arrow.png" alt="" /></span></a>
+              <ul class="dropdown-menu login">
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="timeline-about.html">Timeline About</a></li>
+                <li><a href="timeline-album.html">Timeline Album</a></li>
+                <li><a href="timeline-friends.html">Timeline Friends</a></li>
+                <li><a href="edit-profile-basic.html">Edit: Basic Info</a></li>
+                <li><a href="edit-profile-work-edu.html">Edit: Work</a></li>
+                <li><a href="edit-profile-interests.html">Edit: Interests</a></li>
+                <li><a href="edit-profile-settings.html">Account Settings</a></li>
+                <li><a href="edit-profile-password.html">Change Password</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Pages <span><img src="images/down-arrow.png" alt="" /></span></a>
+              <ul class="dropdown-menu page-list">
+                <li><a href="index.html">Landing Page 1</a></li>
+                <li><a href="index-register.html">Landing Page 2</a></li>
+                <li><a href="newsfeed.html">Newsfeed</a></li>
+                <li><a href="newsfeed-people-nearby.html">Poeple Nearly</a></li>
+                <li><a href="newsfeed-friends.html">My friends</a></li>
+                <li><a href="newsfeed-messages.html">Chatroom</a></li>
+                <li><a href="newsfeed-images.html">Images</a></li>
+                <li><a href="newsfeed-videos.html">Videos</a></li>
+                <li><a href="timeline.html">Timeline</a></li>
+                <li><a href="timeline-about.html">Timeline About</a></li>
+                <li><a href="timeline-album.html">Timeline Album</a></li>
+                <li><a href="timeline-friends.html">Timeline Friends</a></li>
+                <li><a href="edit-profile-basic.html">Edit Profile</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="contact.html">Contact</a></li>
+          </ul>
+          <form class="navbar-form navbar-right hidden-sm">
+            <div class="form-group col-xs-6">
+              <i class="icon ion-android-search"></i>
+              <input type="text" class="form-control" placeholder="Search friends, photos, videos">
+            </div>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+  </header>
+  <!--Header End-->
+
+
+  <div id="lp-register">
+    <div class="container wrapper">
+      <div class="row">
+        <section id="threestep">
+          <h2>Registration Form</h2>
+          <div class="content container" style="padding:55px 0 0 0;" id="R_Form">
+            <div id="register">
+              <form role="form"  id="signup_form">
+                <div class="row">
+                  <div class="form-group col-xs-6">
+                    <input type="text" class="form-control" id="name" placeholder=" Enter Full Name" required>
+                    <span class="error_form" id="nm_error"></span>
+                  </div></br>
+                </div>
+                <div class="row">
+
+                <div class="form-group col-xs-6">
+                  <input type="text" class="form-control" id="u_name" placeholder=" Enter User Name" required>
+                  <span class="error_form" id="unm_error"></span>
+                </div>
+              </div>
+              <div class="row">
+
+                <div class="form-group col-xs-6">
+                  <input type="tel" class="form-control" id="contact" placeholder=" Enter Mobile number" required>
+                  <span class="error_form" id="ph_error"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                  <input type="tel" class="form-control" id="landline" placeholder=" Enter Landline Number(Office)" required>
+                  <span class="error_form" id="nm_error"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                  <input type="email" class="form-control" id="log_mail" placeholder=" Enter Email" data-error=" Email address is invalid" required>
+                  <span class="error_form" id="em_error"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                  <input type="email" class="form-control" id="alt_mail" placeholder=" Enter Alternate Email" data-error=" Email address is invalid">
+                  <span class="error_form" id="em_error"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                    <input type="password" data-minlength="6" class="form-control" id="log_psw" placeholder=" Enter Password" data-error="Incorrect password" required>
+                  <span class="error_form" id="pwd_error"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                    <input type="password" data-minlength="6" class="form-control" id="log_psw1" placeholder=" Enter Confirm Password" data-error="Incorrect password" required>
+                  <span class="error_form" id="pwd_error"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                  <input type="text" class="form-control" id="comp_name" placeholder=" Enter Company Name" required>
+                  <span class="error_form" id="cnm_error"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                  <input type="text" class="form-control" id="desig" placeholder=" Enter Designation" required>
+                  <span class="error_form" id="unm_error"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                  <select id="industry_type" class="form-control">
+                          <option>Select Industry</option>
+                          <option value="IT">IT</option>
+                          <option value="BPO">BPO</option>
+                  </select>
+                  <span class="error_form" id="inds_error"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                  <select name="country" class="form-control countries" id="countryId" required="required">
+                    <option value="">Select Country</option>/
+                  </select>
+
+                  <!-- <input type="text" class="form-control" id="state" placeholder=" Enter State" required>
+                  <span class="error_form" id="st_error"></span> -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                  <select name="state" class="form-control states" id="stateId" required="required">
+                    <option value="">Select State</option>
+                  </select>
+                  <!-- <input type="text" class="form-control" id="city" placeholder=" Enter City" required>
+                  <span class="error_form" id="city_error"></span> -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                  <select name="city" class="form-control cities" id="cityId" required="required">
+                    <option value="">Select City</option>
+                  </select>
+                  <!-- <input type="text" class="form-control" id="country" placeholder=" Enter Country" required> -->
+                  <!-- <span class="error_form" id="coun_error"></span> -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                  <input type="text" class="form-control" id="pincode" placeholder=" Enter Pin Code" required>
+                  <span class="error_form" id="unm_error"></span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-xs-6">
+                  <center><button type="button" name="sub" id="recru_sub" class="btn btn-primary">Register</button></center>
+                </div>
+              </div>
+                </form>
+              </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!--
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/tag-it.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/location.js"></script>
+<script src="js/r-info.js"></script>
+</body>
+</html>

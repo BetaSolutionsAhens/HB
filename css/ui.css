@@ -1,0 +1,26 @@
+
+
+.reg_left
+{
+    position: fixed;
+    /*z-index: 100;*/
+}
+
+.reg_right
+{
+    float: right;
+}
+
+.indx_bottom
+{
+    height: 40px;
+    /*background: #27aae1;*/
+    /*background: #606060;*/
+    background: linear-gradient(to right, rgba(255,255,255, 0.2) , rgba(255,255,255, 0.05));
+
+    position: fixed;
+    bottom: 0px;
+
+    z-index:100;
+    width: 100%;
+}

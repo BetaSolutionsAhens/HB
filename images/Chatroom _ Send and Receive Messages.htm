@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://localhost/hire_blocks/newsfeed-messages.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="This is social network html5 template available in themeforest......">
+		<meta name="keywords" content="Social Network, Social Media, Make Friends, Newsfeed, Profile Page">
+		<meta name="robots" content="index, follow">
+		<title>Chatroom | Send and Receive Messages</title>
+
+    <!-- Stylesheets
+    ================================================= -->
+		<!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+		<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
+		<link href="./Chatroom _ Send and Receive Messages_files/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="./Chatroom _ Send and Receive Messages_files/style.css">
+		<link rel="stylesheet" href="./Chatroom _ Send and Receive Messages_files/ui.css">
+
+    <link rel="stylesheet" href="./Chatroom _ Send and Receive Messages_files/jquery.scrollbar.css">
+		<!-- <link rel="stylesheet" href="css/style.css" /> -->
+		<link rel="stylesheet" href="./Chatroom _ Send and Receive Messages_files/ionicons.min.css">
+    <link rel="stylesheet" href="./Chatroom _ Send and Receive Messages_files/font-awesome.min.css">
+    <link href="./Chatroom _ Send and Receive Messages_files/emoji.css" rel="stylesheet">
+
+    <!--Google Font-->
+    <link href="./Chatroom _ Send and Receive Messages_files/css" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="http://localhost/hire_blocks/images/fav.png">
+	</head>
+  <body>
+
+    <!-- Header
+    ================================================= -->
+		<header id="header">
+				<nav class="navbar navbar-default navbar-fixed-top menu">
+						<div class="container">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header" style="width:220px">
+										<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+												<span class="sr-only">Toggle navigation</span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+												<span class="icon-bar"></span>
+										</button>
+										<a class="navbar-brand" href="http://localhost/hire_blocks/index-register.html" style="padding-top:6px;">
+												<img src="./Chatroom _ Send and Receive Messages_files/demo.png" alt="logo" width="40">
+										</a>
+										<h3 style="margin-top:13px;color:#fff;font-family:lato">HIRE BLOCKS</h3>
+								</div>
+								<!-- Collect the nav links, forms, and other content for toggling -->
+								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav navbar-right main-menu" style="padding-right:30px">
+												<li style="margin-right:10px">
+														<a href="http://localhost/hire_blocks/newsfeed-messages.html#"><i class="fa fa-bell" style="color:#fff;font-size:23px"></i></a>
+												</li>
+												<li style="margin-right:10px">
+														<a href="http://localhost/hire_blocks/newsfeed-messages.html#"><i class="fa fa-comment" style="color:#fff;font-size:23px"></i></a>
+												</li>
+												<li class="dropdown">
+														<a class="dropdown-toggle" data-toggle="dropdown" href="http://localhost/hire_blocks/edit-profile-password.html" style="color:#fff;font-size:23px"><i class="fa fa-cog"></i><span class="caret"></span></a>
+														<ul class="dropdown-menu">
+																<li>
+																		<a href="http://localhost/hire_blocks/candidate-profile-settings.html">Account Settings</a>
+																</li>
+																<li>
+																		<a href="http://localhost/hire_blocks/edit-profile-password.html">Change Password</a>
+																</li>
+																<li>
+																		<a href="http://localhost/hire_blocks/php/log_out.php" id="lg">Log Out</a>
+																</li>
+														</ul>
+												</li>
+										</ul>
+										<div align="center">
+												<form class="navbar-form navbar-center hidden-sm">
+														<div class="form-group">
+																<i class="icon ion-android-search" style="font-size:20px"></i>
+																<input type="text" class="form-control">
+														</div>
+												</form>
+										</div>
+								</div>
+								<!-- /.navbar-collapse -->
+						</div>
+						<!-- /.container -->
+				</nav>
+		</header>
+    <!--Header End-->
+
+    <div id="page-contents">
+    	<div class="container">
+    		<div class="row">
+
+    			<!-- Newsfeed Common Side Bar Left
+          ================================================= -->
+					<div class="col-md-3 static">
+							<div class="profile-card">
+									<img src="./Chatroom _ Send and Receive Messages_files/business-person-icon.png" alt="user" class="profile-photo">
+									<h5 style="text-transform:capitalize"><a href="http://localhost/hire_blocks/timeline.html" class="text-white" id="candidate_name"></a></h5>
+									<p hidden="" id="cid"></p>
+									<a href="http://localhost/hire_blocks/newsfeed-messages.html#" class="text-white"> 1,299 Views</a>
+							</div>
+							<!--profile card ends-->
+							<!--news-feed links ends-->
+							<div id="chat-block" class="chat-block box_noh is_stuck" style="position: fixed; top: 70px; width: 242px;">
+									<ul class="nav-news-feed" style="text-align:left;">
+											<li>
+													<div style="border-bottom:1px solid #c0c0c0">
+															<a href="http://localhost/hire_blocks/edit-profile-basic.html" style="color:#149AC9"><i class="fa fa-user-circle sb_i"></i>Profile</a>
+													</div>
+											</li>
+											<li>
+													<div style="border-bottom:1px solid #c0c0c0">
+															<a href="http://localhost/hire_blocks/newsfeed.html" style="color:#149AC9"><i class="fa fa-newspaper-o sb_i"></i>Jobfeed</a>
+													</div>
+											</li>
+											<li>
+													<div style="border-bottom:1px solid #c0c0c0">
+															<a href="http://localhost/hire_blocks/newsfeed-messages.html#" style="color:#149AC9"><i class="fa fa-vcard sb_i"></i>Clients</a>
+													</div>
+											</li>
+											<li>
+													<div style="border-bottom:1px solid #c0c0c0">
+															<a href="http://localhost/hire_blocks/newsfeed-messages.html#" style="color:#149AC9"><i class="fa fa-user sb_i"></i>Recruiters</a>
+													</div>
+											</li>
+											<li>
+													<div style="border-bottom:1px solid #c0c0c0">
+															<a href="http://localhost/hire_blocks/relevant.html" style="color:#149AC9"><i class="fa fa-bullseye sb_i"></i>Relevant</a>
+													</div>
+											</li>
+											<li>
+													<div style="border-bottom:1px solid #c0c0c0">
+															<a href="http://localhost/hire_blocks/newsfeed-messages.html#" id="msglink" style="color:#149AC9"><i class="fa fa-comments sb_i"></i>Messages</a>
+													</div>
+											</li>
+											<li>
+													<div style="border-bottom:1px solid #c0c0c0">
+															<a href="http://localhost/hire_blocks/rec_det_follow.html" style="color:#149AC9"><i class="fa fa-indent sb_i"></i>JobPosts</a>
+													</div>
+											</li>
+									</ul>
+									<div style="height:40%;margin-top:60px;background:#fff;padding-top:7px;padding-left:20px;border-radius:4px" align="left" class="box_noh">
+										<!-- <div align="left"> -->
+											<span style="font-size:15px;text-transform:uppercase;color:#27aae1;">Reports</span><br>
+
+										<!-- </div> -->
+										<span style="margin-top:15px;">660 Views</span><br>
+										<span style="margin-top:15px;">500 Downloads</span>
+
+									</div>
+									<div style="height:40%;margin-top:20px;background:#fff;padding-top:7px;padding-left:20px;border-radius:4px" align="left" class="box_noh">
+										<!-- <div align="left"> -->
+											<span style="font-size:15px;text-transform:uppercase;color:#27aae1;">Stats</span><br>
+
+										<!-- </div> -->
+										<span style="margin-top:15px;"><i class="fa fa-arrow-up"></i>200%</span><br>
+										<span style="margin-top:15px;color:#ff7f7f">Please update your resume</span>
+
+									</div>
+							</div><div style="position: static; width: 242px; height: 279px; display: block; vertical-align: baseline; float: none;"></div>
+
+							<!--chat block ends-->
+					</div>
+
+    			<div class="col-md-9">
+
+            <!-- Post Create Box
+            ================================================= -->
+            <!-- Post Create Box End -->
+
+            <!-- Chat Room
+            ================================================= -->
+            <div class="chat-room">
+              <div class="row">
+                <div class="col-md-5">
+
+                  <!-- Contact List in Left-->
+                  <div class="scroll-wrapper nav nav-tabs contact-list scrollbar-wrapper scrollbar-outer" style="position: relative;"><ul class="nav nav-tabs contact-list scrollbar-wrapper scrollbar-outer scroll-content" id="chatdiv" style="height: 600px;margin-bottom: 0px;margin-right: 0px;max-height: none;">
+
+                  </ul><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 100px;"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 100px;"></div></div></div></div><!--Contact List in Left End-->
+
+                </div>
+                <div class="col-md-7">
+
+                  <!--Chat Messages in Right-->
+                  <div class="scroll-wrapper tab-content scrollbar-wrapper wrapper scrollbar-outer" style="position: relative;"><div class="tab-content scrollbar-wrapper wrapper scrollbar-outer scroll-content" id="loadchat" style="height: 400px; margin-bottom: 0px; margin-right: 0px; max-height: none;">
+										<div class="tab-pane active" id="contact-1">
+                      <div class="chat-body">
+                      	<ul class="chat-message" id="conversation">
+													<!-- <li class="right"><img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" /><div class="chat-item"><div class="chat-item-header"><h5>Rajesh Reddy</h5><small class="text-muted">2017-12-20 01:25:27</small></div><p>hi</p></div></li> -->
+												</ul>
+											</div>
+										</div>
+                  </div><div class="scroll-element scroll-x"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 100px;"></div></div></div><div class="scroll-element scroll-y"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 100px;"></div></div></div></div><!--Chat Messages in Right End-->
+
+                  <div class="send-message">
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="msgtext" placeholder="Type your message">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" id="msgSend">Send</button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+
+    			<!-- Newsfeed Common Side Bar Right
+          ================================================= -->
+
+    		</div>
+    	</div>
+    </div>
+
+    <!-- Footer
+    ================================================= -->
+
+
+    <!--preloader-->
+    <div id="spinner-wrapper" style="display: none;">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Scripts
+    ================================================= -->
+		<script type="text/javascript" src="./Chatroom _ Send and Receive Messages_files/jquery.min.js"></script>
+		<!-- <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>  -->
+	<script type="text/javascript" src="./Chatroom _ Send and Receive Messages_files/jquery.magnific-popup.js"></script>
+
+	<!-- <script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js'></script> -->
+		<script type="text/javascript" src="./Chatroom _ Send and Receive Messages_files/bootstrap.min.js"></script>
+
+		<script src="./Chatroom _ Send and Receive Messages_files/script.js"></script>
+		<!-- <script type="text/javascript" src="js/tag-it.js"></script> -->
+		<!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
+		<script src="./Chatroom _ Send and Receive Messages_files/jquery.sticky-kit.min.js"></script>
+    <!-- <script src="js/jquery.sticky-kit.min.js"></script> -->
+    <script src="./Chatroom _ Send and Receive Messages_files/jquery.scrollbar.min.js"></script>
+    <script src="./Chatroom _ Send and Receive Messages_files/script.js"></script>
+
+		<!-- <script src="js/jobPosting.js"></script> -->
+		<script type="text/javascript">
+		$(document).ready(function(){
+		  console.log("hi")
+			var name;
+		  var r_id;
+		  $.ajax({
+		    url:"php/getRname.php",
+		    method:"GET",
+		    success:function(data){
+		      console.log(data)
+		      var obj = JSON.parse(data)
+		      for (var i = 0; i < obj.length; i++) {
+		        console.log(obj[i].name)
+		        name = obj[i].name;
+						var id = obj[i].id
+		      }
+		      $("#r_name").append(name)
+					$("#r_name").attr('name',id)
+		    }
+		  })
+		  var getUrlParameter = function getUrlParameter(sParam) {
+		    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+		        sURLVariables = sPageURL.split('&'),
+		        sParameterName,
+		        i;
+
+		    for (i = 0; i < sURLVariables.length; i++) {
+		        sParameterName = sURLVariables[i].split('=');
+
+		        if (sParameterName[0] === sParam) {
+		            return sParameterName[1] === undefined ? true : sParameterName[1];
+		        }
+		    }
+		};
+		var rid = getUrlParameter("r_id");
+		var cid = getUrlParameter("c_id");
+		var cname;
+		var chatleft="";
+		var rec_text="";
+		var sender_text="";
+		var msgtext;
+		var senderid;
+		var receiverid;
+		var datetime;
+		var canid;
+		var recid;
+		var sendername;
+		var rvname;
+		var l;
+		var m;
+		var x;
+		var y;
+		var con_div;
+		var lastmsg;
+		var individual;
+		var multi;
+		console.log(rid);
+
+		$.ajax({
+			url:'php/msgpage.php',
+			type:'POST',
+			data:{c_id:cid,r_id:rid},
+			success:function(data){
+				console.log(data)
+				var obj =JSON.parse(data);
+				console.log(obj);
+				console.log(obj[0]['multi']);
+				var reid = $("#r_name").attr('name');
+				for (var i = 0; i < obj.length; i++) {
+					individual = obj[i]['individual'];
+					console.log(individual);
+					console.log("hi");
+					multi = obj[i]['multi'];
+					console.log(multi);
+					for (var i = 0; i < individual.length; i++) {
+						// individual[i]
+						cname = individual[i].cl_n
+						console.log(cname);
+						if(reid == rid){
+							chatleft +='<li class="active">'+
+									'<a href="#contact-1" data-toggle="tab">'+
+										'<div class="contact">'+
+											'<img src="img/' + individual[i].b_pic +'" alt="" class="profile-photo-sm pull-left"/>'+
+											'<div class="msg-preview">'+
+												'<h6 id="can_name" name="r_'+individual[i].cl_id+'" class ="s_'+rid+'">'+cname+'</h6>'+
+												'<p class="text-muted" id="textmsg"></p>'+
+												'<small class="text-muted" id="time"></small>'+
+												// <!-- <div class="chat-alert">1</div> -->
+											'</div>'+
+										'</div>'+
+									'</a>'+
+								'</li>';
+						}
+						else{
+							chatleft +='<li class="active">'+
+									'<a href="#contact-1" data-toggle="tab">'+
+										'<div class="contact">'+
+											'<img src="img/' + individual[i].b_pic +'" alt="" class="profile-photo-sm pull-left"/>'+
+											'<div class="msg-preview">'+
+												'<h6 id="can_name" name="r_'+rid+'" class ="s_'+individual[i].cl_id+'">'+cname+'</h6>'+
+												'<p class="text-muted" id="textmsg"></p>'+
+												'<small class="text-muted" id="time"></small>'+
+												// <!-- <div class="chat-alert">1</div> -->
+											'</div>'+
+										'</div>'+
+									'</a>'+
+								'</li>';
+						}
+					}
+					for (var i = 0; i < multi.length; i++) {
+						// individual[i]
+						cname = multi[i].cl_n
+						console.log(cname);
+						if(reid == rid){
+							chatleft +='<li class="active">'+
+									'<a href="#contact-1" data-toggle="tab">'+
+										'<div class="contact">'+
+											'<img src="img/' + multi[i].b_pic +'" alt="" class="profile-photo-sm pull-left"/>'+
+											'<div class="msg-preview">'+
+												'<h6 id="can_name" name="r_'+multi[i].cl_id+'" class ="s_'+rid+'">'+cname+'</h6>'+
+												'<p class="text-muted" id="textmsg"></p>'+
+												'<small class="text-muted" id="time"></small>'+
+												// <!-- <div class="chat-alert">1</div> -->
+											'</div>'+
+										'</div>'+
+									'</a>'+
+								'</li>';
+						}
+						else{
+							chatleft +='<li class="active">'+
+									'<a href="#contact-1" data-toggle="tab">'+
+										'<div class="contact">'+
+											'<img src="img/' + multi[i].b_pic +'" alt="" class="profile-photo-sm pull-left"/>'+
+											'<div class="msg-preview">'+
+												'<h6 id="can_name" name="r_'+rid+'" class ="s_'+multi[i].cl_id+'">'+cname+'</h6>'+
+												'<p class="text-muted" id="textmsg"></p>'+
+												'<small class="text-muted" id="time"></small>'+
+												// <!-- <div class="chat-alert">1</div> -->
+											'</div>'+
+										'</div>'+
+									'</a>'+
+								'</li>';
+						}
+					}
+
+				}
+				$("#chatdiv").html(chatleft)
+
+			senderid = $("#can_name").attr("class")
+			console.log(senderid);
+		 receiverid = $("#can_name").attr("name")
+		 console.log(receiverid);
+		  l = senderid;
+		 m = '';
+
+		 for (var i = 0; i < l.length; i++)
+		 {
+		 if ("" + parseInt(l[i]) != "NaN")
+				 m = m + l[i];
+		 }
+		  x = receiverid;
+		  y = '';
+
+		 for (var i = 0; i < x.length; i++)
+		 {
+				 if ("" + parseInt(x[i]) != "NaN")
+						 y = y + x[i];
+		 }
+
+		 // document.write(y);
+		 console.log(y);
+		 }
+		})
+
+	 rvname = $("#can_name").text();
+	 sendername = $("#r_name").text();
+	//  senderid = $("#can_name").attr("class")
+	// console.log(senderid);
+ // receiverid = $("#can_name").attr("name");
+
+	 $.ajax({
+		 url:'php/getmsgs.php',
+		 type:'POST',
+		 data:{c_id:cid,r_id:rid},
+		 success:function(data){
+			 console.log(data)
+			 rvname = $("#can_name").text();
+			 console.log(rvname);
+	 		sendername = $('a[id="r_name"]').text();
+	 console.log(sendername)
+			 var obj1 = JSON.parse(data);
+			 console.log(obj1);
+			 for (var i = 0; i < obj1.length; i++) {
+				 // obj1[i]
+				 console.log(obj1[i].receiver_id);
+				 lastmsg = obj1[i].messageText;
+				//  console.log(m);
+				console.log('r_'+m);
+
+				 if(obj1[i].receiver_id == 'r_'+y){
+					 console.log("hi")
+					 sender_text+='<li class="left">'+
+						 '<img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />'+
+						 '<div class="chat-item">'+
+							 '<div class="chat-item-header">'+
+								 '<h5>'+sendername+'</h5>'+
+								 '<small class="text-muted">'+obj1[i].msg_datetime+'</small>'+
+							 '</div>'+
+							 '<p>'+obj1[i].messageText+'</p>'+
+						 '</div>'+
+					 '</li>';
+				 }
+				 else if (obj1[i].sender_id == 's_'+y) {
+					//  console.log(obj1[i].rec_id);
+					 sender_text +='<li class="right">'+
+						 '<img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-right" />'+
+						 '<div class="chat-item">'+
+							 '<div class="chat-item-header">'+
+								 '<h5>'+rvname+'</h5>'+
+								 '<small class="text-muted">'+obj1[i].msg_datetime+'</small>'+
+							 '</div>'+
+							 '<p>'+obj1[i].messageText+'</p>'+
+						 '</div>'+
+					 '</li>';
+					 console.log(sender_text)
+				 }else{
+
+				 }
+			 }
+			 $("#conversation").append(sender_text)
+			 $("#textmsg").text(lastmsg)
+
+		 }
+	 })
+
+		$("#msgSend").click(function(){
+			// alert("hu")
+			msgtext = $("#msgtext").val();
+
+
+			canid = cid;
+			recid = rid;
+			$.ajax({
+				url:'php/msgpage1.php',
+				type:'POST',
+				data:{msgtxt:msgtext,s_id:senderid,rev_id:receiverid,c_id:canid,r_id:recid},
+				success:function(data){
+					console.log(data)
+					$("#msgtext").val("")
+
+					sender_text ='<li class="left">'+
+						'<img src="http://placehold.it/300x300" alt="" class="profile-photo-sm pull-left" />'+
+						'<div class="chat-item">'+
+							'<div class="chat-item-header">'+
+								'<h5>'+sendername+'</h5>'+
+								'<small class="text-muted"></small>'+
+							'</div>'+
+							'<p>'+msgtext+'</p>'+
+						'</div>'+
+					'</li>';
+					$("#conversation").append(sender_text);
+					$("#textmsg").text(msgtext)
+
+					// $("#loadchat").load("newsfeed-messages.html #loadchat")
+				}
+
+
+			})
+
+		})
+
+
+		})
+
+
+		</script>
+  
+
+<div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"><div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div></div></body></html>

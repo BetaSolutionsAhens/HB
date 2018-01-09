@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<h1>welcome</h1>
+<div id="can_det"></div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var currentLocation = window.location;
+		console.log(currentLocation);
+		// for(var i=0;i<currentLocation.length;i++){
+			console.log(currentLocation.pathname)
+			var a=currentLocation.pathname;
+		// }
+		var str=a.substring(a.lastIndexOf("/")+1);
+		console.log(str)
+	})
+</script>
+</html>
